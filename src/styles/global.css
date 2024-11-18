@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+:root {
+  /* Define custom colors */
+  --color-primary: #383838;
+  --color-secondary: #F4F4F3;
+  --color-accent: #EC5C39;
+}
+
+/* Base styles for text, headings, and links */
+.text-primary {
+  @apply text-gray-900;
+}
+
+.text-secondary {
+  @apply text-gray-600;
+}
+
+.link-primary {
+  @apply text-blue-600 hover:text-blue-800 transition-colors duration-200 ease-in-out;
+}
+
+/* Responsive spacing and colors */
+.p-responsive {
+  @apply p-4 md:p-6 lg:p-8;
+}
+
+.bg-responsive {
+  @apply bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300;
+}
+
+/* Call-to-action button styles */
+.btn-primary {
+  @apply px-4 py-2 bg-accent text-secondary font-semibold rounded-lg shadow-md hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 transition-transform transform hover:-translate-y-0.5;
+}
+
+/* Responsive and utility classes */
+.text-responsive {
+  @apply text-base md:text-lg lg:text-xl;
+}
